@@ -1,0 +1,21 @@
+<template>
+    <section class="slds-modal slds-fade-in-open" role="dialog">
+        <div class="slds-modal__header">
+            <h2 class="slds-modal__title slds-hyphenate">{modalTitle}</h2>
+            <button onclick={closeModal} class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse">
+                <svg class="slds-button__icon slds-button__icon_large">
+                    <use xlink:href="/assets/icons/utility/close.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="slds-modal__content">
+            <slot></slot>
+        </div>
+        <template if:true={showFooter}>
+            <div class="slds-modal__footer">
+                <button onclick={handleSecondaryAction} class="slds-button slds-button_neutral">{secondaryButtonLabel}</button>
+                <button onclick={handlePrimaryAction} class="slds-button slds-button_brand">{primaryButtonLabel}</button>
+            </div>
+        </template>
+    </section>
+</template>
