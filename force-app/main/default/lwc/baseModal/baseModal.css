@@ -1,0 +1,28 @@
+.slds-modal {
+    max-width: 600px;
+}
+
+.slds-modal__header {
+Add baseModal CSS styling    padding: 24px;
+}
+
+.slds-modal__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.slds-modal__content {
+    padding: 24px;
+    min-height: 200px;
+    background-color: #fff;
+}
+
+.slds-modal__footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    background-color: #f9fafb;
+}
